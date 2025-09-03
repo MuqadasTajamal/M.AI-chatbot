@@ -37,6 +37,7 @@ dependencies:
   provider: ^6.1.5
   http: ^1.5.0
   shared_preferences: ^2.5.3
+  google_fonts: ^6.3.0
 
 dev_dependencies:
   flutter_test:
@@ -82,6 +83,24 @@ flutter:
     - family: Robo2
       fonts:
         - asset: fonts/robo2.ttf
+    - family: Mont
+      fonts:
+        - asset: fonts/mont.ttf
+    - family: Mont1
+      fonts:
+        - asset: fonts/mont1.ttf
+    - family: Lato1
+      fonts:
+        - asset: fonts/lato1.ttf
+    - family: Lato
+      fonts:
+        - asset: fonts/lato.ttf
+    - family: Pop
+      fonts:
+        - asset: fonts/pop.ttf
+    - family: Pop1
+      fonts:
+        - asset: fonts/pop1.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
