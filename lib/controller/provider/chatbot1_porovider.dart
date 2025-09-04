@@ -1,9 +1,11 @@
+// import 'package:flutter/material.dart';
+
 import 'dart:convert';
 import 'package:final_project/model/chatbot_model.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-class ChatbotProvider extends ChangeNotifier {
+class Chatbot1Provider extends ChangeNotifier {
   final TextEditingController controller = TextEditingController();
 
   List allMessages = [];

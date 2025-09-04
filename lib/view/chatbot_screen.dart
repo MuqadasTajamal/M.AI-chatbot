@@ -193,10 +193,10 @@ class ChatbotScreen extends StatelessWidget {
             transform: GradientRotation(0.5),
             end: Alignment.bottomRight,
             colors: [
-              Constants.secondarylight,
-              Constants.primary,
-              // Constants.whiteLight,
-              // Constants.white,
+              // Constants.secondarylight,
+              // Constants.primary,
+              Constants.whiteLight,
+              Constants.white,
             ],
           ),
         ),
@@ -206,6 +206,7 @@ class ChatbotScreen extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: Column(
                 children: [
+                  // if(controller.text.isEmpty)
                   Container(
                     height: s.height * 0.70,
                     width: s.width * 0.70,

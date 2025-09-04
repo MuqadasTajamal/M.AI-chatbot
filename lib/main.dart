@@ -1,8 +1,9 @@
 import "package:final_project/controller/provider/chatbot_provider.dart";
-import "package:final_project/view/chatbot_screen.dart";
+import "package:final_project/view/chat1_screen.dart";
+import "package:final_project/view/chat_screen.dart";
+import "package:final_project/view/chatbot_home_screen.dart";
 import "package:flutter/material.dart";
 import "package:provider/provider.dart";
-import 'package:google_fonts/google_fonts.dart';
 
 void main(List<String> args) {
   runApp(MyApp());
@@ -18,11 +19,12 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (context) => ChatbotProvider()),
       ],
       child: MaterialApp(
-        theme: ThemeData(fontFamily: "fonts/Pop"),
+        theme: ThemeData(fontFamily: "fonts/Robo1"),
         title: "MUQADAS",
         debugShowCheckedModeBanner: false,
-        home: ChatbotScreen(),
-        // home: ChatbotScreen(),
+        // home: ChatScreen(),
+        // home: ChatScreen(),
+        home: ChatbotHomeScreen(),
       ),
     );
   }
@@ -30,3 +32,6 @@ class MyApp extends StatelessWidget {
 
 
 //  8
+
+
+           

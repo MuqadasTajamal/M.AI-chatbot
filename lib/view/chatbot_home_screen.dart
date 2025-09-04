@@ -1,4 +1,5 @@
 import 'package:final_project/utils/constants.dart';
+import 'package:final_project/view/chat_screen.dart';
 import 'package:final_project/view/chatbot_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +20,7 @@ class ChatbotHomeScreen extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (_) => ChatbotScreen()),
+                MaterialPageRoute(builder: (_) => ChatScreen()),
               );
             },
             child: Stack(
