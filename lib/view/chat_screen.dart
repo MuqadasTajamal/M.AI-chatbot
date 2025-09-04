@@ -4,6 +4,7 @@ import "package:final_project/components/custom_textfeild.dart";
 import "package:final_project/components/custom_textfeild1.dart";
 import "package:final_project/controller/provider/chatbot_provider.dart";
 import "package:final_project/utils/constants.dart";
+import "package:final_project/view/chatbot_home_screen.dart";
 import "package:flutter/material.dart";
 import "package:provider/provider.dart";
 
@@ -18,30 +19,32 @@ class ChatScreen extends StatelessWidget {
         backgroundColor: Constants.AppBar,
         leading: InkWell(
           onTap: () {
-            Navigator.pop(context);
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ChatbotHomeScreen()),
+            );
           },
           child: Icon(Icons.arrow_back),
         ),
         actions: [Icon(Icons.more_vert)],
-        title: Expanded(
-          child: Row(
-            children: [
-              Flexible(
-                child: CircleAvatar(
-                  radius: 20,
-                  backgroundColor: Constants.black,
-                  child: Image.asset("images/mai2.png", fit: BoxFit.cover),
-                ),
-              ),
-              SizedBox(width: 5),
-              Flexible(child: Text("M.AI ")),
-              SizedBox(width: 5),
-              Icon(Icons.arrow_drop_down),
-            ],
+        title: ListTile(
+          leading: CircleAvatar(
+            radius: 20,
+            backgroundColor: Constants.black,
+            child: Image.asset("images/mai2.png", fit: BoxFit.cover),
+          ),
+          title: Expanded(
+            child: Text(
+              "M.AI ",
+              overflow: TextOverflow.ellipsis,
+              style: TextStyle(fontSize: 19),
+            ),
           ),
         ),
+
         shape: Border.all(color: Constants.boder),
       ),
+
       body: Container(
         height: s.height,
         width: s.width,
